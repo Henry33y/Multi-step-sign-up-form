@@ -37,3 +37,14 @@ back3.addEventListener('click',()=>{
     progress.style.width='240px'
     console.log("back 2 clicked")
 })
+
+const isPalindrome = (str) =>{
+    const lowerCase = str.toString().split('').map(x => x.toLowerCase()).join('')
+    const reverse = lowerCase.split('').reverse().join('')
+    return (lowerCase==reverse)
+}
+console.log(isPalindrome(123))
+
+const isPalindrome2 = (x) => {
+    return x ==x.reverse()
+}
